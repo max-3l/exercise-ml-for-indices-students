@@ -1,0 +1,17 @@
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# OS-specific files
+.DS_Store
+
+# Data files
+# The exercise uses a small, included dataset.
+# If you were to download larger files, you would ignore them here.
+# For this exercise, we choose NOT to ignore the data folder, so it is
+# always available with the project. If it were larger, we would add:
+data/
+.venv/
+venv/

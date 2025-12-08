@@ -1,0 +1,10 @@
+scikit-learn
+numpy
+torch
+tabulate
+scipy
+tqdm
+streamlit
+pandas
+streamlit-drawable-canvas
+plotly
