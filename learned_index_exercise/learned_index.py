@@ -132,7 +132,8 @@ class PyTorchModel(LearnedIndex):
     def predict(self, z_value: int) -> int:
         self.model.eval()
         with torch.no_grad():
-            # TODO: Implement prediction using the decision tree model
+            # TODO: Implement prediction using the pytorch model
+            # HINT: Remember to normalize the input z_value and denormalize the output
             pass
 
 class PyTorchLinearModel(PyTorchModel):
