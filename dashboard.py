@@ -91,13 +91,13 @@ if run_pytorch_linear:
     with st.sidebar.expander("PyTorch Linear Settings"):
         pt_linear_epochs = st.number_input("Epochs", min_value=1, max_value=200, value=10, key="pt_linear_epochs")
         pt_linear_lr = st.number_input("Learning Rate", min_value=0.0001, max_value=1.0, value=0.01, step=0.001, format="%.4f", key="pt_linear_lr")
-        pt_linear_batch = st.number_input("Batch Size", min_value=64, max_value=500000, value=204800, step=1024, key="pt_linear_batch")
+        pt_linear_batch = st.number_input("Batch Size", min_value=64, max_value=dataset_size, value=204800, step=1024, key="pt_linear_batch")
 
 if run_pytorch_mlp:
     with st.sidebar.expander("PyTorch MLP Settings"):
         pt_mlp_epochs = st.number_input("Epochs", min_value=1, max_value=200, value=10, key="pt_mlp_epochs")
         pt_mlp_lr = st.number_input("Learning Rate", min_value=0.0001, max_value=1.0, value=0.01, step=0.001, format="%.4f", key="pt_mlp_lr")
-        pt_mlp_batch = st.number_input("Batch Size", min_value=64, max_value=500000, value=204800, step=1024, key="pt_mlp_batch")
+        pt_mlp_batch = st.number_input("Batch Size", min_value=64, max_value=dataset_size, value=204800, step=1024, key="pt_mlp_batch")
         pt_mlp_hidden = st.number_input("Hidden Layer Size", min_value=8, max_value=256, value=32, step=8, key="pt_mlp_hidden")
         pt_mlp_layers = st.number_input("Number of Hidden Layers", min_value=1, max_value=5, value=2, key="pt_mlp_layers")
 
